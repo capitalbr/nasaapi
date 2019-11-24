@@ -1,9 +1,10 @@
 import axios from "axios";
 
 
-export const getNasaData = (type) => {
-  axios.get(
+export const getNasaData = (type) => (
+  axios.post(
     `https://nasaapidimasv1.p.rapidapi.com/${type}`,
+    {},
     {
       headers: {
         "x-rapidapi-host": "NasaAPIdimasV1.p.rapidapi.com",
@@ -12,4 +13,4 @@ export const getNasaData = (type) => {
       }
     }
   )
-}
+);

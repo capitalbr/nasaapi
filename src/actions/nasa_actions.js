@@ -1,6 +1,6 @@
-import APIutils from "../util/nasa_util"
+import * as APIutils from "../util/nasa_util";
 
-const RECEIVE_DATA = "RECEIVE_DATA"
+export const RECEIVE_DATA = "RECEIVE_DATA"
 
 export const fetchNasaData = (type) => {
   return dispatch => {

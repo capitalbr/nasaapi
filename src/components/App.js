@@ -13,8 +13,7 @@ class App extends React.Component {
   
   render(){
     return (
-      <div className="dropdown"
-      style={{marginLeft: "200px"}}>
+      <div className="dropdown ml-5">
         <button 
           className="btn btn-secondary dropdown-toggle" 
           data-toggle="dropdown"
@@ -26,9 +25,7 @@ class App extends React.Component {
         </button>
         <div 
           className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <div className="dropdown-item">test</div>
         </div>
       </div>
     );

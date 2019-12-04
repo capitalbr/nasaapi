@@ -1,14 +1,14 @@
 import React from 'react';
 import '../App.css';
 import { connect } from 'react-redux';
-import { fetchNasaData } from '../actions/nasa_actions';
+import { fetchAsteroidStats } from '../actions/nasa_actions';
 
 
 class App extends React.Component {
   
 
   componentDidMount(){
-    this.props.fetchNasaData("getAsteroidStats");
+    this.props.fetchAsteroidStats("getAsteroidStats");
   }
   
   render(){
@@ -34,13 +34,13 @@ class App extends React.Component {
 
 const mapStateToProps = (state, ownProps) => {
   return({
-    nasaData: state.nasa
+    asteroidStats: state.nasa
   })
 }
 
 const mapDispatchToProps = (dispatch) => {
   return({
-    fetchNasaData: (type) => dispatch(fetchNasaData(type))
+    fetchAsteroidStats: (type) => dispatch(fetchAsteroidStats(type))
   })
 }
 

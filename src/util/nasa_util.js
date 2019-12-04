@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-export const getNasaData = (type) => (
+export const getAsteroidStats = (type) => (
   axios.post(
     `https://nasaapidimasv1.p.rapidapi.com/${type}`,
     {},

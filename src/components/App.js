@@ -3,6 +3,7 @@ import '../App.css';
 import { connect } from 'react-redux';
 import { fetchNasaData } from '../actions/nasa_actions';
 
+
 class App extends React.Component {
   
 
@@ -24,8 +25,7 @@ class App extends React.Component {
           Choose Nasa Data
         </button>
         <div 
-          class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-          style={{ color: "blue", backgroundColor: "black" }}>>
+          className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>

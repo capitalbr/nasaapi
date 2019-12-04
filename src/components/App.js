@@ -12,8 +12,24 @@ class App extends React.Component {
   
   render(){
     return (
-      <div className="container">
-        {/* {this.props.nasaData} */}
+      <div className="dropdown"
+      style={{marginLeft: "200px"}}>
+        <button 
+          className="btn btn-secondary dropdown-toggle" 
+          data-toggle="dropdown"
+          type="button"
+          id="dropdownMenuButton"
+          aria-haspopup="true" 
+          aria-expanded="false">
+          Choose Nasa Data
+        </button>
+        <div 
+          class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+          style={{ color: "blue", backgroundColor: "black" }}>>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </div>
     );
   }
@@ -21,7 +37,7 @@ class App extends React.Component {
 
 const mapStateToProps = (state, ownProps) => {
   return({
-    nasaData: state
+    nasaData: state.nasa
   })
 }
 
